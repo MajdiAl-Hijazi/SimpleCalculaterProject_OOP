@@ -14,6 +14,18 @@ public:
 		_LastNumber = Num;
 		_LastOperation = "Addaing";
 	}
+	void Subtract(float Num) {
+	
+		_Result -= Num;
+		_LastNumber = Num;
+		_LastOperation = "Subtracting";
+	}
+	void Multiplay(float Num) {
+	
+		_Result *= Num;
+		_LastNumber = Num;
+		_LastOperation = "Multiplaying";
+	}
 };
 
 int main() {
