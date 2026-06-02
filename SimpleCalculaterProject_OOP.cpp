@@ -26,6 +26,18 @@ public:
 		_LastNumber = Num;
 		_LastOperation = "Multiplaying";
 	}
+	void Divide(float Num) {
+	
+		if (Num != 0) {
+
+			_Result /= Num;
+			_LastNumber = Num;
+		}
+		else
+			_LastNumber = 1;
+
+		_LastOperation = "Dividing";
+	}
 };
 
 int main() {
