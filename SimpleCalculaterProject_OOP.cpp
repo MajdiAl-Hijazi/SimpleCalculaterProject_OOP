@@ -4,10 +4,16 @@ using namespace std;
 class clsCalculator {
 
 	string _LastOperation = "clear";
-	float _LastNumber = "0";
-	float _Result = "0";
+	float _LastNumber = 0;
+	float _Result = 0;
 
 public:
+	void Clear() {
+	
+		_Result = 0;
+		_LastNumber = 0;
+		_LastOperation = "Clear"
+	}
 	void Add(float Num) {
 	
 		_Result += Num;
