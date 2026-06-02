@@ -52,7 +52,8 @@ public:
 
 int main() {
 
-
+	clsCalculator Calculator1;
+	Calculator1.PrintResult();
 
 	return 0;
 }
