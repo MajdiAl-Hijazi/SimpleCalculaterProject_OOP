@@ -5,6 +5,7 @@ class clsCalculator {
 
 	string LastOperation;
 	float LastNumber;
+	float Result;
 };
 
 int main() {
