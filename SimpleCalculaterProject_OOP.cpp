@@ -1,4 +1,4 @@
-﻿#include<iostream>
+#include<iostream>
 using namespace std;
 
 class clsCalculator {
@@ -9,31 +9,31 @@ class clsCalculator {
 
 public:
 	void Clear() {
-	
+
 		_Result = 0;
 		_LastNumber = 0;
-		_LastOperation = "Clear"
+		_LastOperation = "Clear";
 	}
 	void Add(float Num) {
-	
+
 		_Result += Num;
 		_LastNumber = Num;
 		_LastOperation = "Addaing";
 	}
 	void Subtract(float Num) {
-	
+
 		_Result -= Num;
 		_LastNumber = Num;
 		_LastOperation = "Subtracting";
 	}
 	void Multiplay(float Num) {
-	
+
 		_Result *= Num;
 		_LastNumber = Num;
 		_LastOperation = "Multiplaying";
 	}
 	void Divide(float Num) {
-	
+
 		if (Num != 0) {
 
 			_Result /= Num;
@@ -45,14 +45,24 @@ public:
 		_LastOperation = "Dividing";
 	}
 	void PrintResult() {
-	
-		cout << "Result After " << _LastOperation << _LastNumber << " is: " << _Result;
+
+		cout << "Result After " << _LastOperation << " " << _LastNumber << " is: " << _Result << endl;
 	}
 };
 
 int main() {
 
 	clsCalculator Calculator1;
+	Calculator1.PrintResult();
+	Calculator1.Add(20);
+	Calculator1.PrintResult();
+	Calculator1.Multiplay(5);
+	Calculator1.PrintResult();
+	Calculator1.Divide(0);
+	Calculator1.PrintResult();
+	Calculator1.Subtract(120);
+	Calculator1.PrintResult();
+	Calculator1.Clear();
 	Calculator1.PrintResult();
 
 	return 0;
