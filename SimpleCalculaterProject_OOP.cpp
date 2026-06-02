@@ -44,6 +44,10 @@ public:
 
 		_LastOperation = "Dividing";
 	}
+	void PrintResult() {
+	
+		cout << "Result After " << _LastOperation << _LastNumber << " is: " << _Result;
+	}
 };
 
 int main() {
